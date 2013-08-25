@@ -1,0 +1,94 @@
+import java.io.*;
+import java.util.*;
+import java.awt.*;
+import java.awt.Color;
+import java.awt.Image.*;
+import java.awt.image.*;
+import javax.imageio.*;
+import javax.swing.*;
+import javax.swing.JComponent.*;
+
+public class matrixTester {
+  Matrix m;
+  ArrayList a,b,c;
+  Picture p;
+  Color[][] color;
+  
+  public matrixTester(Picture z) {
+    p=z;
+    color = p.getArray();
+    p.setArray(color);
+    m = new Matrix(p);
+  }
+  
+  public void display() {
+    m.getImage().display();
+  }
+  
+  public void displayOpp() {
+    m.getOppositeCornerImage().display();
+  }
+  
+  public void displayOppInverse() {
+    m.getOppositeInversedImage().display();
+  }
+  
+  public void displayRed() {
+    m.getRedImage().display();
+  }
+  
+  public void displayGreen() {
+    m.getGreenImage().display();
+  }
+  
+  public void displayBlue() {
+    m.getBlueImage().display();
+  }
+  
+  public void displayPicFromRed() {
+    m.getPictureFromRed().display();
+  }
+  
+  public void displayPicFromGreen() {
+    m.getPictureFromGreen().display();
+  }
+  
+  public void displayPicFromBlue() {
+    m.getPictureFromBlue().display();
+  }
+  
+  public void displayScrambledImage() {
+    m.getScrambledImage(0).display();
+  }
+  
+  public void displayScrambledImage2() {
+    m.getScrambledImage(1).display();
+  }
+  
+  public void displayScrambledImageWithKey() {
+    m.getScrambledImage(2).display();
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}

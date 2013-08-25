@@ -1,0 +1,42 @@
+import java.io.*;
+import java.util.*;
+import java.awt.*;
+
+public class testerMain {
+  public static void main(String[] args) {
+   
+    
+    Picture p = new Picture("pipe.jpg");
+    matrixTester m = new matrixTester(p);
+    m.display();
+    m.displayScrambledImage();
+    //These don't work with small images, trying to figure it out still.
+    m.displayScrambledImage2();
+    m.displayScrambledImageWithKey();
+    
+    
+    m.displayOpp();
+    m.displayOppInverse();
+    m.displayRed();
+    m.displayPicFromRed();
+    m.displayGreen();
+    m.displayPicFromGreen();
+    m.displayBlue();
+    m.displayPicFromBlue();
+    
+    //m.displayScrambledImage();
+    //m.displayScrambledImage2();
+    //m.displayScrambledImageWithKey();
+    
+    
+    
+    //Picture ptwo = new Picture("2dogs.jpg");
+    //matrixTester mtwo = new matrixTester(ptwo);
+    //mtwo.display();
+    
+    //what can I do with n-dimensional arrays?  
+    //length, width height, color (4D cube has diff color per pixel)...texture...?
+    
+    
+  }
+}
